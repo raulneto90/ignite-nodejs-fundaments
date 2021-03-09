@@ -70,7 +70,7 @@ app.delete('/courses/:id', (request, response) => {
 
   courses.splice(courseIndex, 1);
 
-  return response.json(courses);
+  return response.send();
 });
 
 
